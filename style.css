@@ -1,1 +1,21 @@
+*{padding: 0; margin: 0: box-sizing-border-box;}
+#box{
+	 background: rgba(230, 230, 230, .7);
+	width: 790px;
+	height: 300px;
+	margin: auto;
+	border: 5px solid green ;
+	border-top: 10px solid green;
+	padding: 6px;
+	
+}
 
+body{
+	background-image: url("myBackground.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+}
+
+h1{ 
+	font-size: px;
+}

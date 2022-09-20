@@ -2,7 +2,7 @@
 #box{
 	 background: rgba(230, 230, 230, .7);
 	width: 790px;
-	height: 300px;
+	height: 600px;
 	margin: auto;
 	border: 5px solid green ;
 	border-top: 10px solid green;
@@ -18,4 +18,29 @@ body{
 
 h1{ 
 	font-size: px;
+}
+
+#Darren{
+	position: relative;
+	width:300px;
+	height:300px;
+	right: 40px;
+}
+
+#zoey{
+	position: relative;
+	width:200px;
+	height:300px;
+	left: 40px;
+}
+
+#URI {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	top: 50px;
+}
+
+#intro{
+	font-size: 20px;
 }

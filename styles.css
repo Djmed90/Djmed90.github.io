@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -24,35 +25,64 @@ nav ul li a {
     font-weight: bold;
 }
 
-.hero {
+/* Banner Styles */
+.hero .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
     text-align: center;
-    padding: 50px;
-    background: #f4f4f4;
+    overflow: hidden;
+    position: relative;
+    animation: gradientBackground 8s ease infinite;
 }
 
-.hero .cta {
+.hero .banner h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    animation: slideIn 1.5s ease-out;
+}
+
+.hero .banner p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    animation: fadeIn 2s ease-out 0.5s;
+}
+
+.hero .banner .cta {
     display: inline-block;
+    margin-top: 20px;
     padding: 10px 20px;
     color: white;
-    background: #007BFF;
+    background: #ff7e5f;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    font-size: 1.2rem;
+    animation: fadeIn 3s ease-out 1s;
 }
 
-.features {
-    padding: 20px;
-    text-align: center;
+.hero .banner .cta:hover {
+    background: #feb47b;
+    transform: scale(1.1);
+    transition: 0.3s ease;
 }
 
-.feature-box {
-    margin: 10px auto;
-    max-width: 300px;
+/* Animations */
+@keyframes gradientBackground {
+    0% { background: linear-gradient(45deg, #6a11cb, #2575fc); }
+    50% { background: linear-gradient(45deg, #2575fc, #6a11cb); }
+    100% { background: linear-gradient(45deg, #6a11cb, #2575fc); }
 }
 
-footer {
-    text-align: center;
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+@keyframes slideIn {
+    from { transform: translateY(-100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }

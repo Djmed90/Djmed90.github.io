@@ -274,3 +274,50 @@ footer {
     transform: translateY(5px);
   }
   
+
+  /* General Styles for Features Section */
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.feature-item img {
+  max-width: 200px; /* Adjust image size */
+  height: auto;
+  margin-right: 20px; /* Space between image and text */
+  border-radius: 10px;
+}
+
+.feature-text {
+  max-width: calc(100% - 240px); /* Ensure proper spacing with image */
+}
+
+.feature-text h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.feature-text p {
+  color: white;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+  .feature-item {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .feature-item img {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
